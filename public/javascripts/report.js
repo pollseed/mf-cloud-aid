@@ -12,7 +12,7 @@
       let result = document.getElementById('cost-result');
       result.innerHTML = `sum: ${data.sum}`;
     }).fail((data, status, error) => {
-      console.log(status);
+      console.log(`${status}: ${error}`);
     }); 
   }
 
