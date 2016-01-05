@@ -1,0 +1,8 @@
+#cost-input {
+  width: 200px;
+  height: 100px;
+}
+
+tr:hover {
+  background-color: gray;
+}
