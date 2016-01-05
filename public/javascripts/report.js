@@ -8,9 +8,11 @@
         cost: document.getElementById('cost-input').value
       },
     }).done((data, status, xhr) => {
-      console.log('success');
+      console.log(status);
+      let result = document.getElementById('cost-result');
+      result.innerHTML = `sum: ${data.sum}`;
     }).fail((data, status, error) => {
-      console.log('fail');
+      console.log(status);
     }); 
   }
 
